@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script>
+            function arama() {
+                
+                var oyunAdi = document.getElementById("ara").value;
+            
+                
+                if (oyunAdi === "red dead redemption 2" || oyunAdi === "rdr2") {
+                    window.location.href = "red2.html"; 
+                }
+                else if(oyunAdi === "valorant" || oyunAdi ==="valo") {
+                    window.location.href = "valo.html"; 
+                }
+                else if(oyunAdi === "baldurs gate 3") {
+                    window.location.href = "baldurs.html"; 
+                }
+                else if(oyunAdi === "battlefield 2042" || oyunAdi ==="battlefield") {
+                    window.location.href = "battlefield.html"; 
+                }
+                else if(oyunAdi === "call of duty mw:3" || oyunAdi ==="cod") {
+                    window.location.href = "callofduty.html";  
+                }
+                else if(oyunAdi === "disco elysium") {
+                    window.location.href = "disco.html";   
+                }
+                else if(oyunAdi === "EA SPORTS FC 24" || oyunAdi ==="fifa") {
+                    window.location.href = "fifa.html";   
+                }
+                else if(oyunAdi === "THE ELDER SCROLLS V: SKYRIM" || oyunAdi ==="skyrim") {
+                    window.location.href = "skyrim.html";   
+                }
+                else if(oyunAdi === "god of war" || oyunAdi ==="gow") {
+                    window.location.href = "godofwar.html";   
+                }
+                else if(oyunAdi === "knight online" || oyunAdi ==="ko") {
+                    window.location.href = "knight.html";   
+                }
+                else if(oyunAdi === "last of us") {
+                    window.location.href = "last of us.html";   
+                }
+                else if(oyunAdi === "league of legends" || oyunAdi ==="lol") {
+                    window.location.href = "lol.html";   
+                }
+                else if(oyunAdi === "lost ark") {
+                    window.location.href = "lostark.html";   
+                }
+                else if(oyunAdi === "minecraft") {
+                    window.location.href = "minecraft.html";   
+                }
+                else if(oyunAdi === "NBA 2K24" || oyunAdi ==="nba") {
+                    window.location.href = "nba.html";   
+                }
+                else if(oyunAdi === "teamfight tactics " || oyunAdi ==="tft") {
+                    window.location.href = "tft.html";   
+                }
+                else if(oyunAdi === "EFOOTBALL 2024" || oyunAdi ==="pes") {
+                    window.location.href = "pes.html";   
+                }
+                else if(oyunAdi === "rise online") {
+                    window.location.href = "rise.html";   
+                }
+                else if(oyunAdi === "LEGENDS OF RUNETERRA" || oyunAdi ==="runeterra") {
+                    window.location.href = "runeterra.html";   
+                }
+                else if(oyunAdi === "uncharted 4") {
+                    window.location.href = "uncharted.html";   
+                }
+                else if(oyunAdi === "THE WITCHER 3") {
+                    window.location.href = "witcher.html";   
+                }
+                else if(oyunAdi === "world of warcraft" || oyunAdi ==="wow") {
+                    window.location.href = "wow.html";   
+                }
+                else if(oyunAdi === "WWE 2K23" || oyunAdi ==="wwe") {
+                    window.location.href = "wwe.html";   
+                }
+                else if(oyunAdi === "the legend of zelda" || oyunAdi ==="zelda") {
+                    window.location.href = "zelda.html"; 
+                }
+                else {
+                    alert("Aranan oyun bulunamadı."); 
+                }
+            }
+            function klavyeKontrol(event) {
+                if (event.keyCode === 13) { 
+                    arama(); 
+                }
+            }
+        </script>
+
+        <meta charset="utf-8">
+        <title>EODGAMES</title>
+        <meta name="discription" content="EOD Oyun ve Oyun İçi Para Satımı">
+        <meta name="keywords" content="bilgisayar,oyun,para,steam,spor,macera,riot">
+        <link rel="icon" type="image/x-icon" href="resim/favicon.ico">
+
+
+        <style>
+            html{
+                background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+                font-size: 15px;
+            }
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            #banner{
+                width: 100%;
+                height: 8rem;
+            }
+            #anamenu{
+                width: 100%;
+                height: 8rem;
+            }
+            #icerik{
+                width: 100%;
+                height: 25rem;
+            }
+            #altmenu{
+                width: 100%;
+                height: 8rem;
+            }
+            #logo{
+                position: relative;
+                float: left;
+                width: 8%;
+                height: 100px;
+                top: 0.5rem;
+                left: 1rem;
+            }
+            #ara{
+                position: relative;
+                top: 2.7rem;
+                left: 20rem;
+                width: 40%;
+                height: 2rem;
+            }
+            #buton{
+                position: relative;
+                top: 2.7rem;
+                height: 2.2rem;
+                width: 4rem;
+                left: 19rem;
+
+            }
+            .kisi{
+                position: relative;
+                float: right;
+                top: 2.4rem;
+                right: 8rem;
+                margin: 0.3rem;
+                width: 8rem;
+                height: 2.15rem;
+                
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                border-style: solid;
+                position: relative;
+                float: left;
+                width: 10rem;
+                padding: 0.75rem;
+                margin: 0.75rem;
+                border-radius: 1rem;
+                text-align: center;
+                left: 2.5rem;
+                top: 1.5rem;
+            }
+            ul li a{
+                text-decoration: none;
+                font-weight: bold;
+            }
+            ul li a:hover{
+                color: red;
+            }
+            
+            #pop{
+                position: relative;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                height: 20rem;
+                width: 20%;
+                top: 1rem;
+                left: 5rem;
+                border-radius: 5rem;
+            }
+            @media screen and (min-width:1500px){
+                #banner{
+                
+                width: 100%;
+                height: 11rem;
+            }
+            #anamenu{
+                
+                width: 100%;
+                height: 11rem;
+                
+            }
+            #icerik{
+                
+                width: 100%;
+                height: 30rem;
+                
+            }
+            #altmenu{
+                
+                width: 100%;
+                height: 12rem;
+                
+            }
+            #logo{
+                position: relative;
+                float: left;
+                width: 8%;
+                height: 9rem;
+                top: 1.5rem;
+                left: 1.5rem;
+                
+            }
+            #ara{
+                position: relative;
+                top: 5rem;
+                left: 20rem;
+                width: 40%;
+                height: 2rem;
+            }
+            #buton{
+                position: relative;
+                top: 5rem;
+                height: 2.25rem;
+                width: 4rem;
+                left: 19.7rem;
+
+            }
+            .kisi{
+                position: relative;
+                float: right;
+                top: 4.75rem;
+                right: 15rem;
+                margin: 0.3rem;
+                width: 8rem;
+                height: 2.15rem;
+                
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                border-style: solid;
+                position: relative;
+                float: left;
+                width: 12rem;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 1rem;
+                text-align: center;
+                left: 5rem;
+                top: 2rem;
+            }
+            ul li a{
+                text-decoration: none;
+                
+            }
+            ul li a:hover{
+                color: red;
+            }
+            #pop{
+                position: relative;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                height: 20rem;
+                width: 20%;
+                top: 1rem;
+                left: 8rem;
+                border-radius: 5rem;
+            }
+                
+
+                
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="sayfa">
+            <header id="banner">
+                <a href="index.html"><img id="logo" src="resim/EOD.png"></a>
+                <form>
+                    <input type="text" id="ara" placeholder="Ara">
+                    <input type="button" id="buton" value="Ara" onclick="arama()">
+                    <a href="kayit.html"><input class="kisi" type="button" id="kayit" value="Kayıt Ol"></a>
+                    <a href="giris.html"><input class="kisi" type="button" id="giris" value="Giriş Yap"></a>
+                </form>
+            </header>
+            <nav id="anamenu">
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="riot.html">Riot Games</a></li>
+                    <li><a href="aksiyon.html">Aksiyon</a></li>
+                    <li><a href="spor.html">Spor</a></li>
+                    <li><a href="rol.html">Rol Yapma</a></li>
+                    <li><a href="macera.html">Macera</a></li>
+                    <li><a href="mmo.html">MMO</a></li>
+                </ul>
+                </nav>
+            </nav>
+            <article id="icerik">
+                
+                <a href="lol.html"><img id="pop" src="riot/lol.jpg"></a>
+                <a href="red2.html"><img id="pop" src="aksiyon/red2.jpg"></a>
+                <a href="baldurs.html"><img id="pop" src="rol/baldurs.jpg"></a>
+                <a href="fifa.html"><img id="pop" src="spor/fifa.jpg"></a>
+                
+            </article>
+            <aside id="yanmenu">
+
+            </aside>
+            <footer id="altmenu">
+                <ul>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="odeme.html">Ödeme Seçenekleri</a></li>
+                    <li><a href="yardım.html">Yardım Merkezi</a></li>
+                    <li><a href="sıfırlama.html">Kullanıcı Adı/Şifre Unuttum</a></li>
+                    <li><a href="oner.html">Bize Öneride Bulun</a></li>
+                </ul>
+
+            </footer>
+        </div>
+    </body>
+</html>
