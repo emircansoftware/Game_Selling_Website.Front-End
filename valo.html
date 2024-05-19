@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let urunAdedi = 1; // Başlangıçta ürün adedi
+
+// Ürün adedini azaltma fonksiyonu
+function azaltAdet() {
+    if (urunAdedi > 1) {
+        urunAdedi--;
+        document.getElementById("urunAdedi").innerText = urunAdedi;
+    }
+}
+
+// Ürün adedini arttırma fonksiyonu
+function arttirAdet() {
+    urunAdedi++;
+    document.getElementById("urunAdedi").innerText = urunAdedi;
+}
+        </script>
+
+        <meta charset="utf-8">
+        <title>EODGAMES</title>
+        <meta name="discription" content="EOD Oyun ve Oyun İçi Para Satımı">
+        <meta name="keywords" content="bilgisayar,oyun,para,steam,spor,macera,riot">
+        <link rel="icon" type="image/x-icon" href="resim/favicon.ico">
+
+
+        <style>
+            html{
+                background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+                font-size: 15px;
+            }
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            #banner{
+                width: 100%;
+                height: 8rem;
+            }
+            #anamenu{
+                width: 100%;
+                height: 8rem;
+            }
+            #icerik{
+                width: 100%;
+                height: 25rem;
+            }
+            #altmenu{
+                width: 100%;
+                height: 8rem;
+            }
+            #logo{
+                position: relative;
+                float: left;
+                width: 8%;
+                height: 100px;
+                top: 0.5rem;
+                left: 1rem;
+            }
+            #ara{
+                position: relative;
+                top: 2.7rem;
+                left: 20rem;
+                width: 40%;
+                height: 2rem;
+            }
+            #buton{
+                position: relative;
+                top: 2.7rem;
+                height: 2.2rem;
+                width: 4rem;
+                left: 19rem;
+
+            }
+            .kisi{
+                position: relative;
+                float: right;
+                top: 2.4rem;
+                right: 8rem;
+                margin: 0.3rem;
+                width: 8rem;
+                height: 2.15rem;
+                
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                border-style: solid;
+                position: relative;
+                float: left;
+                width: 10rem;
+                padding: 0.75rem;
+                margin: 0.75rem;
+                border-radius: 1rem;
+                text-align: center;
+                left: 2.5rem;
+                top: 1.5rem;
+            }
+            ul li a{
+                text-decoration: none;
+                font-weight: bold;
+            }
+            ul li a:hover{
+                color: red;
+            }
+            article img{
+                position: relative;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                height: 20rem;
+                width: 20%;
+                top: 1rem;
+                left: 3rem;
+                border-radius: 5rem;
+            }
+            table {
+                border-collapse: collapse;
+                width: 30%;
+                position: relative;
+                float: right;
+                top: 3rem;
+                right: 35rem;
+                border: solid;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #DDD;
+            }
+            #oyun{
+                text-align: center;
+            }
+            tr:hover {background-color: #D6EEEE;}
+            #sepet{
+                position: relative;
+                float: right;
+                left: 20rem;
+                width: 15%;
+                height: 60%;
+            }
+            #sepetbuton1{
+                position: relative;
+                float: right;
+                top: 20rem;
+                left: 26rem;
+                width: 2%;
+            }
+            #sepetbuton2{
+                position: relative;
+                float: right;
+                top: 20rem;
+                left: 37rem;
+                width: 2%;
+            }
+            .adet{
+                position: relative;
+                float: right;
+                top: 20rem;
+                left: 32.5rem;
+                width: 2%;
+            }
+            @media screen and (min-width:1500px){
+                #banner{
+                
+                width: 100%;
+                height: 11rem;
+            }
+            #anamenu{
+                
+                width: 100%;
+                height: 11rem;
+                
+            }
+            #icerik{
+                
+                width: 100%;
+                height: 30rem;
+                
+            }
+            #altmenu{
+                
+                width: 100%;
+                height: 12rem;
+                
+            }
+            #logo{
+                position: relative;
+                float: left;
+                width: 8%;
+                height: 9rem;
+                top: 1.5rem;
+                left: 1.5rem;
+                
+            }
+            #ara{
+                position: relative;
+                top: 5rem;
+                left: 20rem;
+                width: 40%;
+                height: 2rem;
+            }
+            #buton{
+                position: relative;
+                top: 5rem;
+                height: 2.25rem;
+                width: 4rem;
+                left: 19.7rem;
+
+            }
+            .kisi{
+                position: relative;
+                float: right;
+                top: 4.75rem;
+                right: 15rem;
+                margin: 0.3rem;
+                width: 8rem;
+                height: 2.15rem;
+                
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                border-style: solid;
+                position: relative;
+                float: left;
+                width: 12rem;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 1rem;
+                text-align: center;
+                left: 5rem;
+                top: 2rem;
+            }
+            ul li a{
+                text-decoration: none;
+                
+            }
+            ul li a:hover{
+                color: red;
+            }
+            article img{
+                position: relative;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                height: 25rem;
+                width: 25%;
+                top: 0rem;
+                left: 5rem;
+                border-radius: 5rem;
+            }
+            table {
+                border-collapse: collapse;
+                width: 30%;
+                position: relative;
+                float: right;
+                top: 1.75rem;
+                right: 43rem;
+                border: solid;
+            }
+
+            th, td {
+                padding: 13px;
+                text-align: left;
+                border-bottom: 1px solid #DDD;
+            }
+            #oyun{
+                text-align: center;
+            }
+            tr:hover {background-color: #D6EEEE;}
+            #sepet{
+                position: relative;
+                float: right;
+                left: 25rem;
+                width: 15%;
+                height: 60%;
+            }
+            #sepetbuton1{
+                position: relative;
+                float: right;
+                top: 22rem;
+                left: 33.5rem;
+                width: 3%;
+            }
+            #sepetbuton2{
+                position: relative;
+                float: right;
+                top: 22rem;
+                left: 47rem;
+                width: 3%;
+            }
+            .adet{
+                position: relative;
+                float: right;
+                top: 22rem;
+                left: 41.3rem;
+                width: 2%;
+                
+            }
+                
+
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="sayfa">
+            <header id="banner">
+                <a href="index.html"><img id="logo" src="resim/EOD.png"></a>
+                <form>
+                    <input type="text" id="ara" value="Ara">
+                    <input type="button" id="buton" value="Ara">
+                    <a href="kayit.html"><input class="kisi" type="button" id="kayit" value="Kayıt Ol"></a>
+                    <a href="giris.html"><input class="kisi" type="button" id="giris" value="Giriş Yap"></a>
+                    
+                </form>
+            </header>
+            <nav id="anamenu">
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="riot.html">Riot Games</a></li>
+                    <li><a href="aksiyon.html">Aksiyon</a></li>
+                    <li><a href="spor.html">Spor</a></li>
+                    <li><a href="rol.html">Rol Yapma</a></li>
+                    <li><a href="macera.html">Macera</a></li>
+                    <li><a href="mmo.html">MMO</a></li>
+                </ul>
+                </nav>
+            </nav>
+            <article id="icerik">
+                <img id="lol" src="riot/valorant.jpg">
+
+                <table>
+                    <tr><th id="oyun" colspan="2">VALORANT</th></tr>
+                    <tr><th>Oyun Türü</th><td>X</td></tr>
+                    <tr><th>Platformlar</th><td>X</td></tr>
+                    <tr><th>Geliştirici</th><td>X</td></tr>
+                    <tr><th>Çok Oyunculu/Hikayeli</th><td>X</td></tr>
+                    <tr><th>Oyun İçi Satın Alma</th><td>X</td></tr>
+                    <tr><th>Oyun Videosu</th><td>X</td></tr>
+                    <tr><th>Fiyat</th><td>X</td></tr>
+
+                </table>
+
+                <a href="sepet.html"><img id="sepet" src="resim/sepet.png"></a>
+                <button id="sepetbuton1" onclick="azaltAdet()">-</button>
+                <span class="adet" id="urunAdedi">1</span>
+                <button id="sepetbuton2" onclick="arttirAdet()">+</button>
+                
+            </article>
+            <aside id="yanmenu">
+
+            </aside>
+            <footer id="altmenu">
+                <ul>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="odeme.html">Ödeme Seçenekleri</a></li>
+                    <li><a href="yardım.html">Yardım Merkezi</a></li>
+                    <li><a href="sıfırlama.html">Kullanıcı Adı/Şifre Unuttum</a></li>
+                    <li><a href="oner.html">Bize Öneride Bulun</a></li>
+                </ul>
+
+            </footer>
+        </div>
+    </body>
+</html>
